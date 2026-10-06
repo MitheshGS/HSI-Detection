@@ -49,7 +49,7 @@ Example run on a 168-band capture:
 Successfully loaded HSI Data Cube. Shape: (400, 320, 168)
 ```
 
-![Raw HSI band 100](view_raw_hsi_band100.png)
+![Raw HSI band 100](<img width="939" height="1168" alt="view_raw_hsi_band100" src="https://github.com/user-attachments/assets/e698e0d4-06e5-4db6-a93d-dc533b60624e" />.png)
 
 *Band 100 of the raw cube, shown in grayscale. Different materials reflect differently at each wavelength, which is exactly the signal an RGB camera throws away.*
 
@@ -74,7 +74,7 @@ Applying PCA Dimensionality Reduction (16 -> 3 channels)...
 Final Compressed Image Shape for YOLOv5: (400, 320, 3)
 ```
 
-![16 band to 3 channel PCA result](pca_16_to_3_400x320.png)
+![16 band to 3 channel PCA result](<img width="1397" height="775" alt="pca_16_to_3_400x320" src="https://github.com/user-attachments/assets/9804956d-4ae2-4b35-b41d-f5dae80e1275" />.png)
 
 *Left: one of the 16 raw bands in grayscale. Right: the 3-channel PCA composite. Objects that look similar in a single band separate into distinct false colors.*
 
@@ -86,9 +86,9 @@ Applying PCA Dimensionality Reduction (16 -> 3 channels)...
 Final Compressed Image Shape for YOLOv5: (256, 256, 3)
 ```
 
-![PCA shape check](<img width="1638" height="990" alt="attention_softmax_layer26" src="https://github.com/user-attachments/assets/3c02b1a3-c833-4538-a8fa-453131d29a8d" /><img width="939" height="1168" alt="view_raw_hsi_band100" src="https://github.com/user-attachments/assets/e698e0d4-06e5-4db6-a93d-dc533b60624e" />
+![PCA shape check](
 <img width="1304" height="656" alt="pca_sanity_check_256x256" src="https://github.com/user-attachments/assets/c7878a9c-8d63-4160-8978-fd3b46c2e45f" />
-<img width="1397" height="775" alt="pca_16_to_3_400x320" src="https://github.com/user-attachments/assets/9804956d-4ae2-4b35-b41d-f5dae80e1275" />
+
 .png)
 
 > **Note:** this script covers the spectral (PCA) half of the paper's Hyperspectral Information Decoupling module. The paper additionally builds a second, spatial input by selecting informative bands (optimal neighborhood reconstruction) and color mapping them. See [About the base paper](#about-the-base-paper-s2adet).
@@ -117,7 +117,7 @@ S2ADet fuses spectral and spatial features through its **Spectral-Spatial Aggreg
 python extract_attention.py --source test_image.png
 ```
 
-![SSA softmax attention distribution](attention_softmax_layer26.png)
+![SSA softmax attention distribution](<img width="1638" height="990" alt="attention_softmax_layer26" src="https://github.com/user-attachments/assets/3c02b1a3-c833-4538-a8fa-453131d29a8d" />.png)
 
 ### Reading the plot
 
